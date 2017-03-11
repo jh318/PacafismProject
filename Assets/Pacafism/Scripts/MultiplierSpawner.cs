@@ -15,9 +15,9 @@ public class MultiplierSpawner : MonoBehaviour {
 			Destroy (gameObject);
 	}
 
-	void SpawnMultiplier(){
+	/*void SpawnMultiplier(){
 		Instantiate (MultiplierPool); //TO DO spawn on enemy death
-	}
+	}*/
 
 	MultiplierController MultiplierPool (){
 		MultiplierController multiplier = null;
