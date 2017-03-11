@@ -20,7 +20,7 @@ public class GateSpawner : MonoBehaviour {
 
 	IEnumerator SpawnGateCoroutine(){
 		while (enabled) {
-			Instantiate (gatePrefab, new Vector3 (0, 0, 0), Quaternion.identity);
+			Instantiate (gatePrefab, transform.position, Quaternion.identity);
 			GateController g = SpawnGate ();
 			g.transform.position = transform.position + (Vector3)Random.insideUnitCircle * spawnRadius;
 			yield return new WaitForSeconds (spawnTime);

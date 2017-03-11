@@ -38,4 +38,12 @@ public class PlayerController : MonoBehaviour {
 		}
 
 	}
+
+	void OnTriggerEnter2D(Collider2D c){
+		if (c.gameObject.GetComponent<GateController> () == true) {
+			Debug.Log("Collided with gate");
+			c.gameObject.SetActive (false);
+			ExplosionSpawner.instance.gameObject.SetActive (true);
+		}
+	}
 }
