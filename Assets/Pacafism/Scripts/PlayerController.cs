@@ -3,7 +3,6 @@ using System.Collections.Generic;
 using UnityEngine;
 
 public class PlayerController : MonoBehaviour {
-
 	public static PlayerController player;
 	public float speed = 3;
 
@@ -21,13 +20,7 @@ public class PlayerController : MonoBehaviour {
 			player = this;
 		}
 	}
-
-
-	// Use this for initialization
-	void Start () {
-	}
-	
-	// Update is called once per frame
+		
 	void Update () {
 		float x = Input.GetAxis ("Horizontal");
 		float y = Input.GetAxis ("Vertical");
@@ -41,9 +34,12 @@ public class PlayerController : MonoBehaviour {
 
 	void OnTriggerEnter2D(Collider2D c){
 		if (c.gameObject.GetComponent<GateController> () == true) {
-			Debug.Log("Collided with gate");
 			c.gameObject.SetActive (false);
 			ExplosionSpawner.instance.SpawnExplosion ();
+		}
+		if (c.gameObject.GetComponent<MultiplierController> () == true) {
+			GameManager.instance.playerMultiplier += c.gameObject.GetComponent<MultiplierController> ().getMultiplier ();
+			GameManager.instance.SetMultiplier (c.gameObject.GetComponent<MultiplierController>().getMultiplier());
 		}
 	}
 }

@@ -1,0 +1,21 @@
+fileFormatVersion: 2
+guid: ec105b913037d1d4a85ef34979299086
+timeCreated: 1489205880
+licenseType: Free
+TrueTypeFontImporter:
+  serializedVersion: 4
+  fontSize: 16
+  forceTextureCase: -2
+  characterSpacing: 0
+  characterPadding: 1
+  includeFontData: 1
+  fontName: HelloHotcakes
+  fontNames:
+  - HelloHotcakes
+  fallbackFontReferences: []
+  customCharacters: 
+  fontRenderingMode: 0
+  ascentCalculationMode: 1
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

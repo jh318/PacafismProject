@@ -3,10 +3,9 @@ using System.Collections.Generic;
 using UnityEngine;
 
 public class EnemyController : MonoBehaviour {
-
-
 	public float speed = 3;
 	public float lookAhead = 1;
+	public float score;
 
 	Rigidbody2D _body;
 	public Rigidbody2D body{
@@ -18,11 +17,10 @@ public class EnemyController : MonoBehaviour {
 		}
 	}
 
-	// Use this for initialization
-	void Start () {
+	void Start(){
+		score = Random.Range(1.0f, 10.0f);
 	}
-
-	// Update is called once per frame
+		
 	void Update () {
 		Vector2 target = (Vector2)PlayerController.player.transform.position + PlayerController.player.body.velocity * lookAhead;
 		Vector2 heading = (target - (Vector2)transform.position).normalized;
@@ -31,6 +29,5 @@ public class EnemyController : MonoBehaviour {
 		if (body.velocity.sqrMagnitude > 0.1f) {
 			transform.right = body.velocity;
 		}
-
 	}
 }
