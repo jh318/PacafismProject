@@ -43,7 +43,7 @@ public class PlayerController : MonoBehaviour {
 		if (c.gameObject.GetComponent<GateController> () == true) {
 			Debug.Log("Collided with gate");
 			c.gameObject.SetActive (false);
-			ExplosionSpawner.instance.gameObject.SetActive (true);
+			ExplosionSpawner.instance.SpawnExplosion ();
 		}
 	}
 }

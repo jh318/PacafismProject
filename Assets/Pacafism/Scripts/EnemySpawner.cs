@@ -43,6 +43,7 @@ public class EnemySpawner : MonoBehaviour {
 			enemy = Instantiate (enemyPrefab) as EnemyController;
 			enemyPool.Add (enemy);
 		}
+		enemy.gameObject.SetActive (true);
 		return enemy;
 	}
 }

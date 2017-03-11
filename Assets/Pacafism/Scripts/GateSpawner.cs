@@ -40,6 +40,7 @@ public class GateSpawner : MonoBehaviour {
 			gate = Instantiate (gatePrefab) as GateController;
 			gatePool.Add (gate);
 		}
+		gate.gameObject.SetActive (true);
 		return gate;
 	}
 }

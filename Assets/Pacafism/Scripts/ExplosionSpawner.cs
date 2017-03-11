@@ -11,13 +11,8 @@ public class ExplosionSpawner : MonoBehaviour {
 		else Destroy (gameObject); 
 	}
 
-	void Start(){
-		gameObject.SetActive (false);
+	public void SpawnExplosion(){
+		Instantiate(explosion, PlayerController.player.transform.position, Quaternion.identity);
 	}
 
-	//Disable by default and enable with player/gate collision
-	void OnEnable(){
-		Instantiate (explosion, PlayerController.player.transform.position, Quaternion.identity);
-		gameObject.SetActive (false);
-	}
 }
