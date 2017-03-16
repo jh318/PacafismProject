@@ -15,11 +15,7 @@ public class MultiplierSpawner : MonoBehaviour {
 			Destroy (gameObject);
 	}
 
-	/*void SpawnMultiplier(){
-		Instantiate (MultiplierPool); //TO DO spawn on enemy death
-	}*/
-
-	MultiplierController MultiplierPool (){
+	public MultiplierController MultiplierPool (Vector3 pos){
 		MultiplierController multiplier = null;
 		for (int i = 0; i < multiplierPool.Count; i++) {
 			MultiplierController m = multiplierPool [i];
@@ -31,6 +27,7 @@ public class MultiplierSpawner : MonoBehaviour {
 		if (multiplier == null) {
 			multiplierPool.Add (multiplier = Instantiate (multiplierPrefab) as MultiplierController); 
 		}
+		multiplier.transform.position = pos;
 		multiplier.gameObject.SetActive (true);
 		return multiplier;
 	}

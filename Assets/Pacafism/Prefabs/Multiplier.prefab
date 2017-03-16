@@ -21,7 +21,7 @@ GameObject:
   - component: {fileID: 4086997052036708}
   - component: {fileID: 212505536989077054}
   - component: {fileID: 58502566014031776}
-  - component: {fileID: 114614525543121460}
+  - component: {fileID: 114112070712185016}
   m_Layer: 0
   m_Name: Multiplier
   m_TagString: Untagged
@@ -56,7 +56,7 @@ CircleCollider2D:
   m_Offset: {x: 0, y: 0}
   serializedVersion: 2
   m_Radius: 1.2354965
---- !u!114 &114614525543121460
+--- !u!114 &114112070712185016
 MonoBehaviour:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
@@ -64,10 +64,10 @@ MonoBehaviour:
   m_GameObject: {fileID: 1241897679651542}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: dc8560c3de0c19c419de78fa156c5562, type: 3}
+  m_Script: {fileID: 11500000, guid: b68eccb68071b084ea84a055dd8c5709, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 3
+  multiplier: 1.5
 --- !u!212 &212505536989077054
 SpriteRenderer:
   m_ObjectHideFlags: 1

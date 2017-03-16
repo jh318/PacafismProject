@@ -13,13 +13,7 @@ public class ExplosionSpawner : MonoBehaviour {
 		else Destroy (gameObject); 
 	}
 
-	public void SpawnExplosion(){
-		//Instantiate(explosionPrefab, PlayerController.player.transform.position, Quaternion.identity);
-		//ExplosionController e = ExplosionPool();
-		ExplosionPool().transform.position = PlayerController.player.transform.position;
-	}
-
-	ExplosionController ExplosionPool(){
+	public void SpawnExplosion(Vector3 pos){
 		ExplosionController explosion = null;
 		for (int i = 0; i < explosionPool.Count; i++) {
 			ExplosionController e = explosionPool [i];
@@ -29,11 +23,10 @@ public class ExplosionSpawner : MonoBehaviour {
 			}
 		}
 		if (explosion == null) {
-			//explosion = Instantiate (explosionPrefab) as ExplosionController;
-			//explosionPool.Add (explosion);	
 			explosionPool.Add ( explosion = Instantiate (explosionPrefab) as ExplosionController);
 		}
+		explosion.transform.position = pos;
 		explosion.gameObject.SetActive (true);
-		return explosion;
+		explosion.Explode ();
 	}
 }

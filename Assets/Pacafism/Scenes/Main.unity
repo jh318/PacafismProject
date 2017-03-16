@@ -121,7 +121,7 @@ MonoBehaviour:
   gatePrefab: {fileID: 114540409027587872, guid: b356d4c425ed434439fd73e8de76e674,
     type: 2}
   spawnRadius: 40
-  spawnTime: 2
+  spawnTime: 4
 --- !u!4 &11935623
 Transform:
   m_ObjectHideFlags: 0
@@ -165,7 +165,7 @@ MonoBehaviour:
   enemyPrefab: {fileID: 114651175353532168, guid: 74180535f4b5901439ffa9b46f0337a1,
     type: 2}
   spawnRadius: 20
-  spawnTime: 2
+  spawnTime: 1
 --- !u!4 &14291094
 Transform:
   m_ObjectHideFlags: 0
@@ -526,7 +526,7 @@ MonoBehaviour:
   gatePrefab: {fileID: 114540409027587872, guid: b356d4c425ed434439fd73e8de76e674,
     type: 2}
   spawnRadius: 40
-  spawnTime: 2
+  spawnTime: 4
 --- !u!4 &584483906
 Transform:
   m_ObjectHideFlags: 0
@@ -632,7 +632,7 @@ MonoBehaviour:
   enemyPrefab: {fileID: 114651175353532168, guid: 74180535f4b5901439ffa9b46f0337a1,
     type: 2}
   spawnRadius: 20
-  spawnTime: 2
+  spawnTime: 1
 --- !u!4 &789064773
 Transform:
   m_ObjectHideFlags: 0
@@ -803,6 +803,48 @@ CanvasRenderer:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1013248084}
+--- !u!1001 &1023931269
+Prefab:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 4954160986095370, guid: 207c854923be27b42ad676e469155080, type: 2}
+      propertyPath: m_LocalPosition.x
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 4954160986095370, guid: 207c854923be27b42ad676e469155080, type: 2}
+      propertyPath: m_LocalPosition.y
+      value: -9
+      objectReference: {fileID: 0}
+    - target: {fileID: 4954160986095370, guid: 207c854923be27b42ad676e469155080, type: 2}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4954160986095370, guid: 207c854923be27b42ad676e469155080, type: 2}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4954160986095370, guid: 207c854923be27b42ad676e469155080, type: 2}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4954160986095370, guid: 207c854923be27b42ad676e469155080, type: 2}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4954160986095370, guid: 207c854923be27b42ad676e469155080, type: 2}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4954160986095370, guid: 207c854923be27b42ad676e469155080, type: 2}
+      propertyPath: m_RootOrder
+      value: 16
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_ParentPrefab: {fileID: 100100000, guid: 207c854923be27b42ad676e469155080, type: 2}
+  m_IsPrefabParent: 0
 --- !u!1001 &1223567608
 Prefab:
   m_ObjectHideFlags: 0
@@ -879,7 +921,7 @@ MonoBehaviour:
   enemyPrefab: {fileID: 114651175353532168, guid: 74180535f4b5901439ffa9b46f0337a1,
     type: 2}
   spawnRadius: 20
-  spawnTime: 2
+  spawnTime: 1
 --- !u!4 &1430341133
 Transform:
   m_ObjectHideFlags: 0
@@ -923,7 +965,7 @@ MonoBehaviour:
   enemyPrefab: {fileID: 114651175353532168, guid: 74180535f4b5901439ffa9b46f0337a1,
     type: 2}
   spawnRadius: 20
-  spawnTime: 2
+  spawnTime: 1
 --- !u!4 &1840800823
 Transform:
   m_ObjectHideFlags: 0
@@ -1241,7 +1283,7 @@ MonoBehaviour:
   gatePrefab: {fileID: 114540409027587872, guid: b356d4c425ed434439fd73e8de76e674,
     type: 2}
   spawnRadius: 40
-  spawnTime: 2
+  spawnTime: 4
 --- !u!4 &2103946125
 Transform:
   m_ObjectHideFlags: 0
@@ -1353,7 +1395,7 @@ MonoBehaviour:
   gatePrefab: {fileID: 114540409027587872, guid: b356d4c425ed434439fd73e8de76e674,
     type: 2}
   spawnRadius: 40
-  spawnTime: 2
+  spawnTime: 4
 --- !u!4 &2122490218
 Transform:
   m_ObjectHideFlags: 0

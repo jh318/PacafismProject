@@ -35,11 +35,12 @@ public class PlayerController : MonoBehaviour {
 	void OnTriggerEnter2D(Collider2D c){
 		if (c.gameObject.GetComponent<GateController> () == true) {
 			c.gameObject.SetActive (false);
-			ExplosionSpawner.instance.SpawnExplosion ();
+			ExplosionSpawner.instance.SpawnExplosion(transform.position);
 		}
 		if (c.gameObject.GetComponent<MultiplierController> () == true) {
 			GameManager.instance.playerMultiplier += c.gameObject.GetComponent<MultiplierController> ().getMultiplier ();
 			GameManager.instance.SetMultiplier (c.gameObject.GetComponent<MultiplierController>().getMultiplier());
+			c.gameObject.SetActive (false);
 		}
 	}
 }
