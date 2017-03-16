@@ -18,7 +18,7 @@ public class ExplosionController : MonoBehaviour {
 	}
 
 	IEnumerator ExplodeCoroutine(){
-		yield return new WaitForSeconds (1);
+		yield return new WaitForSeconds (3);
 		gameObject.SetActive (false);
 	}
 }
