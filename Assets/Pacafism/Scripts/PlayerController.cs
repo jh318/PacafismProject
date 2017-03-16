@@ -42,5 +42,13 @@ public class PlayerController : MonoBehaviour {
 			GameManager.instance.SetMultiplier (c.gameObject.GetComponent<MultiplierController>().getMultiplier());
 			c.gameObject.SetActive (false);
 		}
+
+	}
+
+	void OnCollisionEnter2D(Collision2D c){
+		if (c.gameObject.GetComponent<EnemyController> () == true) {
+			PlayerController.player.gameObject.SetActive (false);
+
+		}
 	}
 }
